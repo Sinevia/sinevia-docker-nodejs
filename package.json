@@ -1,0 +1,45 @@
+{
+  "name": "Name",
+  "version": "1.0.0",
+  "description": "Description",
+  "keywords": [
+    "",
+    "Node.js",
+    "application"
+  ],
+  "author": {
+    "name": "Sinevia",
+    "email": "info@sinevia.com",
+    "url": "http://sinevia.com/"
+  },
+  "homepage": "http://sinevia.com",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  },
+  "dependencies": {
+    "express": "*",
+    "mongodb": "*",
+    "monk": "*",
+    "node-uuid": "*",
+    "supervisor": "*",
+    "chai": "*",
+    "sinon": "*",
+    "mocha": "*",
+    "supertest": "*",
+    "bson": "*",
+    "body-parser": "*"
+  },
+  "devDependencies": {},
+  "bundleDependencies": [],
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "start": "supervisor ./app.js",
+    "test": "./node_modules/.bin/mocha -u tdd"
+  }
+}
