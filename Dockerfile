@@ -21,8 +21,7 @@ RUN mkdir /site
 ADD files/app.js /site/
 ADD files/package.json /site/
 ADD files/run_site.sh /
-RUN cd /site
-RUN npm install
+RUN npm install /site
 
 USER root
 EXPOSE 80 22
