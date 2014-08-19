@@ -17,6 +17,7 @@ RUN add-apt-repository ppa:chris-lea/node.js -y
 RUN apt-get update
 RUN apt-get install nodejs -y
 
+RUN mkdir /site
 ADD files/app.js /site/
 ADD files/package.json /site/
 ADD files/run_site.sh /
